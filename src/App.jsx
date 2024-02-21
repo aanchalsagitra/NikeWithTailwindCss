@@ -1,5 +1,5 @@
 import "./App.css";
-import './index.css'
+import "./index.css";
 import {
   Navbar,
   Hero,
@@ -11,6 +11,7 @@ import {
   Footer,
   SuperQuality,
 } from "./sectionComponents";
+
 function App() {
   return (
     <main className="relative">

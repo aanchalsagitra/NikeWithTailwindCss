@@ -1,4 +1,4 @@
-import Navbar from "./Components/Navbar";
+import Navbar from './BaseComponents/Navbar'
 import Hero from "./Components/Hero";
 import CustomerReviews from "./Components/CustomerReviews";
 import Services from "./Components/Services";

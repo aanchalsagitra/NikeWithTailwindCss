@@ -9,12 +9,12 @@ const Navbar = () => {
         <a href="#">
           <img src={headerLogo} alt="LOgo" width={130} height={29} />
         </a>
-        <ul className="flex-1 flex justify-center gap-16 items-center max-lg:hidden">
+        <ul className="flex-1 flex list-none justify-center gap-16 items-center max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-monts errat leading-normal text-lg text-slate-400"
+                className="font-monts no-underline errat leading-normal text-lg text-slate-400"
               >
                 {item.label}
               </a>
