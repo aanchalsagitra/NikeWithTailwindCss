@@ -1,10 +1,10 @@
 // import React from 'react'
-
+import { services } from "../Constants"
 const Services = () => {
   return (
-    <div>
+    <section>
       
-    </div>
+    </section>
   )
 }
 

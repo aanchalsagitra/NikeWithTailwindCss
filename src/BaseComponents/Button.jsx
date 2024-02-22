@@ -1,12 +1,29 @@
-const Button = (props) => {
+const Button = ({
+  label,
+  iconURL,
+  backgroundColor,
+  textColor,
+  borderColor,
+  fullWidth,
+}) => {
   return (
-    <button className="flex justify-center align-center gap-2 px-4 py-4 border-none border-red-300 text-lg leading-none rounded-full text-white w-fit bg-[#FF6452]">
-      {props.label}
-      <img
-        src={props.iconURL}
-        className="ml-2 rounded-full w-6 h-6"
-        alt="arrow-right-icon"
-      />
+    <button
+      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none w-fit mt-4 
+      ${
+        backgroundColor
+          ? `${backgroundColor} ${textColor} ${borderColor}`
+          : "bg-coral-red text-white border-coral-red"
+      } rounded-full ${fullWidth && "w-full"}`}
+    >
+      {label}
+
+      {iconURL && (
+        <img
+          src={iconURL}
+          alt="arrow right icon"
+          className="ml-2 rounded-full bg-white w-5 h-5"
+        />
+      )}
     </button>
   );
 };
