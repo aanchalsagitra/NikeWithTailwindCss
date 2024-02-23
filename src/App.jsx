@@ -5,7 +5,6 @@ import {
   Hero,
   CustomerReviews,
   PopularProducts,
-  SpecialOffers,
   Services,
   Subscription,
   Footer,
@@ -28,10 +27,10 @@ function App() {
       <section className="padding-x py-10">
         <Services></Services>
       </section>
-      <section className="padding">
+      {/* <section className="padding">
         <SpecialOffers></SpecialOffers>
-      </section>
-      <section className="bg-pale-blue padding">
+      </section> */}
+      <section className="bg-pale-blue w-[100vw]">
         <CustomerReviews></CustomerReviews>
       </section>
       <section className="padding-x sm:py-32 py-16 w-full">
